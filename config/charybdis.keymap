@@ -39,11 +39,11 @@
 
         layer_1 {
             bindings = <
-&kp F1      &kp F2    &kp F3            &kp F4                  &kp F5         &kp F6          &none          &none           &none           &kp SCROLLLOCK   &kp INS  &kp SYSREQ
-&kp F7      &kp F8    &kp F9            &kp F10                 &kp F11        &kp F12         &none          &none           &none           &none            &none    &none
-&bt BT_CLR  &kp HOME  &kp LEFT_BRACE    &kp RIGHT_BRACE         &none          &none           &kp PAGE_UP    &none           &kp UP_ARROW    &none            &none    &none
-&none       &kp END   &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &none          &none           &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
-                                        &kp LG(LS(LEFT_ARROW))  &kp LG(LS(S))  &kp LC(W)       &none          &none
+&kp F1      &kp F2    &kp F3            &kp F4                  &kp F5         &kp F6          &none          &none              &none           &kp SCROLLLOCK   &kp INS  &kp SYSREQ
+&kp F7      &kp F8    &kp F9            &kp F10                 &kp F11        &kp F12         &none          &none              &none           &none            &none    &none
+&bt BT_CLR  &kp HOME  &kp LEFT_BRACE    &kp RIGHT_BRACE         &none          &none           &kp PAGE_UP    &none              &kp UP_ARROW    &none            &none    &none
+&none       &kp END   &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &none          &none           &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
+                                        &kp LG(LS(LEFT_ARROW))  &kp LG(LS(S))  &kp LC(W)       &kp SQT        &kp DOUBLE_QUOTES
                                                                 &bt BT_SEL 0   &bt BT_SEL 1    &none
             >;
         };
