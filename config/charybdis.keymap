@@ -46,7 +46,7 @@
 &kp CAPSLOCK  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F   &kp G        &kp H            &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LCMD SEMICOLON  &kp ENTER
 &mo 1         &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N            &kp M        &kp COMMA    &kp DOT         &kp SLASH           &mo 1
                                               &kp LCTRL    &kp LEFT_WIN  &kp ENTER    &kp GRAVE        &kp SPACE
-                                                           &kp BTN1      &kp BTN2     &kp RIGHT_SHIFT
+                                                           &mkp LCLK     &mkp RCLK    &kp RIGHT_SHIFT
             >;
 
             trackball-bindings = <&tmv_coarse>;
