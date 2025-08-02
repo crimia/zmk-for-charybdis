@@ -3,18 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
-    aliases {
-        bt_sel_0 = &bt, BT_SEL 0;
-
-        bt_sel_1 = &bt, BT_SEL 1;
-
-        bt_clr_all = &bt, BT_CLR_ALL;
-
-        mkp = &mkp;
-    };
-};
-
 &bt {
 };
 
