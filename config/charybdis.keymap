@@ -1,16 +1,27 @@
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 
-// #include <dt-bindings/zmk/pointing.h>
+/ {
+    aliases {
+        bt_sel_0 = &bt BT_SEL 0;
+        bt_sel_1 = &bt BT_SEL 1;
+        bt_clr_all = &bt BT_CLR_ALL;
+        mkp = &mkp;
+    };
+};
 
+&bt {};
+
+// 기본 설정
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
 
+// 콤보 정의
 / {
     combos {
         compatible = "zmk,combos";
@@ -51,7 +62,7 @@
             bindings = <
 &kp F1      &kp F2    &kp F3            &kp F4                  &kp F5         &kp F6          &none          &none              &none           &kp SCROLLLOCK   &kp INS       &kp SYSREQ
 &kp F7      &kp F8    &kp F9            &kp F10                 &kp F11        &kp F12         &none          &none              &none           &none            &none         &none
-&bt BT_CLR  &kp HOME  &kp LEFT_BRACE    &kp RIGHT_BRACE         &none          &none           &kp PAGE_UP    &none              &kp UP_ARROW    &none            &bt_sel_0     &bt_clr_all
+&bt_clr     &kp HOME  &kp LEFT_BRACE    &kp RIGHT_BRACE         &none          &none           &kp PAGE_UP    &none              &kp UP_ARROW    &none            &bt_sel_0     &bt_clr_all
 &none       &kp END   &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &none          &none           &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &bt_sel_1     &none
                                         &kp LG(LS(LEFT_ARROW))  &kp LG(LS(S))  &kp LC(W)       &kp SQT        &kp DOUBLE_QUOTES
                                                                 &bt_sel_0      &bt_sel_1       &none
